@@ -58,10 +58,211 @@
         <p>信用卡轉入長榮的是<strong>獎勵哩程</strong>，不能拿來升金卡。樂桃、捷星等廉航票不計長榮卡籍，也不計漢莎 Points。長榮經濟輕省（A 艙）累積比例 <strong>0%</strong>，官網最低經濟來回約 NT$14,813 起，這檔幾乎不能用來衝卡。</p>
       </div>
     </section>
-    <p class="wrap section-lead">完整試算表、權益對照與計算方法請往本頁各章節；本檔與本機 <code>index.html</code> 相同內容結構。</p>
-    <iframe title="full report" src="report.html" style="display:none"></iframe>
-    <p class="wrap"><a href="report.html">若畫面不完整，請開 report.html</a></p>
-    <script src="js/app.js"></script>
+    <section class="wrap stats" aria-label="核心數字">
+      <article><p class="stat-label">銀卡 → 金卡（12 個月）</p><p class="stat-num">32<span>趟</span></p><p class="stat-note">經濟經典 TPE–KIX 來回 · 約 NT$64 萬</p></article>
+      <article><p class="stat-label">金卡續卡（24 個月）</p><p class="stat-num">51<span>趟</span></p><p class="stat-note">同票種 · 年均 26 趟 · 約 NT$102 萬／兩年</p></article>
+      <article><p class="stat-label">參議員保級（台阪長榮）</p><p class="stat-num">0<span> QP</span></p><p class="stat-note">Points 可累、Qualifying Points 為零，無法達標</p></article>
+      <article><p class="stat-label">假設漢莎執飛台阪商務</p><p class="stat-num">25<span>趟</span></p><p class="stat-note">同大陸商務點數表 · 每年 · 約 NT$103 萬</p></article>
+    </section>
+    <section id="rules" class="wrap">
+      <h2>官方門檻對照</h2>
+      <p class="section-lead">兩邊都對應星空聯盟金卡，但「取得」與「保級」的時間窗、計分單位、哪些航班算數，差很多。</p>
+      <div class="table-wrap" tabindex="0">
+        <table>
+          <caption>長榮金卡 vs 漢莎參議員：資格規則</caption>
+          <thead><tr><th scope="col">項目</th><th scope="col">長榮金卡（無限萬哩遊）</th><th scope="col">漢莎參議員（Miles & More）</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">星盟對應</th><td>Star Alliance Gold</td><td>Star Alliance Gold</td></tr>
+            <tr><th scope="row">本報告焦點</th><td><strong>取得</strong>：銀卡連續 12 個月內達標</td><td><strong>保級</strong>：每個日曆年重新達標</td></tr>
+            <tr><th scope="row">門檻</th><td>50,000 卡籍哩程，或長榮／立榮合格航段 50</td><td>2,000 Points <em>且</em> 1,000 Qualifying Points</td></tr>
+            <tr><th scope="row">前一階</th><td>須已是銀卡。綠卡升銀：12 個月內 30,000 哩＋長榮／立榮 4 段，或 26 段</td><td>Frequent Traveller：650 Points 且 325 QP。保級失敗會軟著陸到此級</td></tr>
+            <tr><th scope="row">剩餘額度</th><td>用哩程晉升時，扣掉門檻後的剩餘卡籍哩程可再留 1 年挑戰下一級；航段剩餘不保留</td><td>Points／QP 每年 1 月 1 日歸零，不滾入下一年</td></tr>
+            <tr><th scope="row">續卡／保級</th><td>金卡 2 年效期內：80,000 哩或 80 航段</td><td>與取得相同：日曆年 2,000 Points ＋ 1,000 QP</td></tr>
+            <tr><th scope="row">會籍效期</th><td>達成次月 1 日起算 2 年。例：2026-05-15 達標 → 2026-06-01 至 2028-05-31</td><td>達標後立即生效，至後年 2 月底。例：2026 年任一時間達標 → 至 2028-02-28</td></tr>
+            <tr><th scope="row">哪些航班算數</th><td>哩程：長榮／立榮國際線＋星盟夥伴。航段路徑：僅長榮／立榮實際飛航國際段</td><td>Points：漢莎集團、Miles & More 夥伴、星盟。QP：僅漢莎集團及共同發行夥伴實際營運</td></tr>
+            <tr><th scope="row">信用卡／轉點</th><td>通常只進獎勵哩程，<strong>不計卡籍</strong></td><td>Points 以搭機為主；飯店／卡片只能補少數缺口</td></tr>
+            <tr><th scope="row">失敗後</th><td>金卡續不上會再檢查是否符合銀卡續卡（40,000 哩或 42 段），不是直接掉綠卡</td><td>保級失敗降一級為 Frequent Traveller（星盟銀卡），再失敗再往下降</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="two-col">
+        <article>
+          <h3>長榮金卡怎麼從零走到手</h3>
+          <ol class="steps">
+            <li>綠卡免費註冊，永久有效。</li>
+            <li>連續 12 個月 30,000 卡籍哩程，且長榮／立榮國際段至少 4 次（或直接飛 26 段）→ 銀卡，效期 2 年。</li>
+            <li>升銀後剩餘哩程可再留 1 年。若同一年就飛到約 80,000 哩，有機會綠→銀→金連跳。</li>
+            <li>銀卡連續 12 個月再累 50,000 哩或 50 段 → 金卡，效期 2 年。</li>
+            <li>金卡 2 年內再累 80,000 哩或 80 段才能續金。</li>
+          </ol>
+        </article>
+        <article>
+          <h3>漢莎參議員怎麼保</h3>
+          <ol class="steps">
+            <li>資格窗是日曆年 1/1–12/31，不是會員周年。</li>
+            <li>必須同時達到 2,000 Points 與 1,000 QP。QP 永遠是 Points 的子集。</li>
+            <li>同大陸經濟每段 20 點、商務 40 點；跨大陸經濟 60、商務 200、頭等 400。</li>
+            <li>2026 年達標，會籍用到 2028 年 2 月底。要延續，須在另一個日曆年再達一次。</li>
+            <li>現實路徑多是漢莎集團長程商務約 5 個來回，不是亞洲短程堆量。</li>
+          </ol>
+        </article>
+      </div>
+    </section>
+    <section id="route" class="wrap">
+      <h2>台北—大阪這條線怎麼計分</h2>
+      <p class="section-lead">TPE–KIX 單程約 1,060 哩。星盟在這條線主要是長榮；全日空也有，同樣<strong>不是</strong>漢莎集團執飛。</p>
+      <h3>長榮票價產品與卡籍累積</h3>
+      <p>短程線經濟／商務分成輕省、基本、經典、尊寵。卡籍哩程＝距離 × 比例；航段是加權的。</p>
+      <div class="table-wrap" tabindex="0">
+        <table>
+          <caption>TPE–KIX 單程與來回累積（距離以 1,060 哩計）</caption>
+          <thead><tr><th>艙等產品</th><th>訂位代碼</th><th>累積比例</th><th>單程卡籍哩程</th><th>單程航段</th><th>來回卡籍哩程</th><th>來回航段</th><th>來回票價推估</th></tr></thead>
+          <tbody>
+            <tr class="mute"><td>經濟輕省</td><td>A</td><td>0%</td><td>0</td><td>0</td><td>0</td><td>0</td><td>約 14,800 起 · 不計卡籍</td></tr>
+            <tr><td>經濟基本</td><td>S / W / V</td><td>50%</td><td>530</td><td>0.5</td><td>1,060</td><td>1.0</td><td>NT$16,000</td></tr>
+            <tr class="hl"><td>經濟經典</td><td>M / H / Q</td><td>75%</td><td>795</td><td>0.75</td><td>1,590</td><td>1.5</td><td>NT$20,000</td></tr>
+            <tr><td>經濟尊寵</td><td>Y / B</td><td>100%</td><td>1,060</td><td>1.0</td><td>2,120</td><td>2.0</td><td>NT$26,000</td></tr>
+            <tr><td>商務基本</td><td>D</td><td>125%</td><td>1,325</td><td>1.5</td><td>2,650</td><td>3.0</td><td>NT$41,200</td></tr>
+            <tr><td>商務經典</td><td>J</td><td>150%</td><td>1,590</td><td>1.75</td><td>3,180</td><td>3.5</td><td>NT$48,000</td></tr>
+            <tr><td>商務尊寵</td><td>C</td><td>175%</td><td>1,855</td><td>2.0</td><td>3,710</td><td>4.0</td><td>NT$52,700</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="fine">票價依據：長榮官網 2026 年 8–9 月 TPE–KIX 經濟來回約 NT$14,813–26,900，商務來回約 NT$41,170–52,700。</p>
+      <h3>同一張台阪票，進漢莎帳戶會怎樣</h3>
+      <div class="table-wrap" tabindex="0">
+        <table>
+          <caption>長榮執飛 TPE–KIX 掛入 Miles & More</caption>
+          <thead><tr><th>艙等</th><th>每段 Points</th><th>每段 Qualifying Points</th><th>來回 Points</th><th>來回 QP</th><th>能否保參議員</th></tr></thead>
+          <tbody>
+            <tr><td>經濟／豪華經濟</td><td>20（同大陸）</td><td>0</td><td>40</td><td>0</td><td>不能。QP 永遠是 0</td></tr>
+            <tr><td>商務</td><td>40（同大陸）</td><td>0</td><td>80</td><td>0</td><td>不能。Points 25 趟可滿，QP 仍是 0</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>台灣與日本同屬亞洲，漢莎點數表走「同大陸」。能給 QP 的公司包括 Lufthansa、SWISS、Austrian、Brussels、ITA、LOT 等——<strong>沒有一家飛 TPE–KIX</strong>。</p>
+    </section>
+    <section id="calc" class="wrap">
+      <h2>用台阪來回票試算</h2>
+      <p class="section-lead">選目標與票種，或改成你實際買到的含稅來回價。系統會比較哩程路徑與航段路徑，取較少趟數。</p>
+      <form class="calc" id="calc-form">
+        <fieldset>
+          <legend>目標</legend>
+          <label><input type="radio" name="goal" value="get" checked> 銀卡升金卡（12 個月 · 5 萬哩或 50 段）</label>
+          <label><input type="radio" name="goal" value="from-green"> 綠卡一路到金卡（約 8 萬哩，剩餘哩程可留 1 年）</label>
+          <label><input type="radio" name="goal" value="keep"> 金卡續卡（24 個月 · 8 萬哩或 80 段）</label>
+          <label><input type="radio" name="goal" value="senator"> 參議員保級（日曆年 · 2,000 Points 且 1,000 QP）</label>
+        </fieldset>
+        <fieldset>
+          <legend>票種</legend>
+          <label for="fare">長榮票價產品</label>
+          <select id="fare" name="fare"></select>
+        </fieldset>
+        <fieldset>
+          <legend>含稅來回票價（新台幣）</legend>
+          <label for="price">可改成你買到的價格</label>
+          <input id="price" name="price" type="number" min="1000" step="100" value="20000">
+        </fieldset>
+      </form>
+      <div class="result" id="result" aria-live="polite"></div>
+      <h3>固定票價下的完整對照</h3>
+      <div class="table-wrap" tabindex="0">
+        <table id="matrix">
+          <caption>以本表推估票價計算，無條件進位到整趟來回</caption>
+          <thead><tr><th>票種</th><th>單趟成本</th><th>銀→金 趟數</th><th>銀→金 花費</th><th>金卡續卡 趟數</th><th>金卡續卡 花費</th><th>參議員（長榮執飛）</th><th>假設漢莎執飛同大陸</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+    <section class="wrap">
+      <h2>年度化以後，誰比較「貴」</h2>
+      <p class="section-lead">金卡續卡看兩年、參議員保級看一年。下面改成維持星盟金卡，平均一年要飛幾趟台阪。</p>
+      <div class="bars" role="img" aria-label="維持星盟金卡的年度台阪來回趟數">
+        <div class="bar-row"><p>長榮金卡續卡 · 經濟經典</p><div class="bar-track"><span style="width:52%"></span></div><p class="bar-val">約 26 趟／年 · NT$51 萬</p></div>
+        <div class="bar-row"><p>長榮金卡續卡 · 商務基本</p><div class="bar-track"><span class="alt" style="width:28%"></span></div><p class="bar-val">約 14 趟／年 · NT$56 萬</p></div>
+        <div class="bar-row"><p>參議員 · 長榮台阪</p><div class="bar-track"><span class="zero" style="width:8%"></span></div><p class="bar-val">無法達標 · QP = 0</p></div>
+        <div class="bar-row"><p>參議員 · 假設漢莎執飛經濟</p><div class="bar-track"><span class="warn" style="width:100%"></span></div><p class="bar-val">50 趟／年 · 約 NT$80–100 萬</p></div>
+        <div class="bar-row"><p>參議員 · 假設漢莎執飛商務</p><div class="bar-track"><span class="warn" style="width:50%"></span></div><p class="bar-val">25 趟／年 · 約 NT$103 萬</p></div>
+        <div class="bar-row"><p>參議員真實路徑 · 漢莎集團長程商務</p><div class="bar-track"><span class="lh" style="width:10%"></span></div><p class="bar-val">約 5 個跨大陸來回／年（不是台阪）</p></div>
+      </div>
+      <div class="callout">
+        <h3>怎麼讀這張圖</h3>
+        <p>對住在台灣、主力飛大阪的人，長榮金卡是貴但算得出來：經濟經典每年大約 26 個來回就能續。漢莎參議員若死守台阪，錢花再多也保不住。</p>
+      </div>
+    </section>
+    <section id="benefits" class="wrap">
+      <h2>拿到以後差在哪</h2>
+      <p class="section-lead">星盟金卡的地面禮遇大致同級。差在自家網路與漢莎樞紐。</p>
+      <div class="table-wrap" tabindex="0">
+        <table>
+          <caption>權益摘要（搭經濟艙、持金卡／參議員時）</caption>
+          <thead><tr><th>權益</th><th>長榮金卡</th><th>漢莎參議員</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">星盟貴賓室</th><td>本人＋1 位同行（須同航班）。桃園進 The Star</td><td>星盟金卡同等；漢莎樞紐另有 Senator Lounge</td></tr>
+            <tr><th scope="row">額外行李</th><td>長榮計件制經濟／豪經多 1 件 23 kg</td><td>星盟金卡同等額外行李</td></tr>
+            <tr><th scope="row">獎勵哩程加成</th><td>金卡搭長榮加贈獎勵哩程 25%（不加卡籍）</td><td>Points 不因會籍加成</td></tr>
+            <tr><th scope="row">升等憑證</th><td>金卡沒有固定贈送；鑽石卡才有</td><td>每次獲頒或延長 Sen 給 2 張 eVoucher</td></tr>
+            <tr><th scope="row">終生會籍</th><td>無公開終生金卡</td><td>累積 40,000 QP 可終生 Senator</td></tr>
+            <tr><th scope="row">台灣出發實用度</th><td>高。桃園長榮體系、日韓東南亞班次密</td><td>歐洲樞紐很強；很少搭漢莎集團則加值有限</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section class="wrap">
+      <h2>誰該衝哪一張</h2>
+      <div class="who">
+        <article>
+          <h3>優先衝長榮金卡</h3>
+          <ul>
+            <li>住台灣，一年多次飛日本／韓國／東南亞，且願意買長榮會累積的票。</li>
+            <li>已經是銀卡，或綠卡能在約一年內堆到 8 萬卡籍哩程。</li>
+            <li>在乎桃園貴賓室、金卡櫃檯、帶一位家人進 The Star。</li>
+          </ul>
+        </article>
+        <article>
+          <h3>才需要保漢莎參議員</h3>
+          <ul>
+            <li>日曆年內本來就要搭多次漢莎集團實際營運航班。</li>
+            <li>典型是歐洲／跨大西洋商務，不是台阪短程。</li>
+            <li>若只剩 QP 缺口，應改買漢莎集團金屬，而不是再多買長榮台阪。</li>
+          </ul>
+        </article>
+      </div>
+      <p>同一個人可以同時持有兩本會員。一張機票只能累一本計畫。</p>
+    </section>
+    <section id="method" class="wrap method">
+      <h2>方法、來源與限制</h2>
+      <h3>計算式</h3>
+      <pre>單程卡籍哩程 = 1,060 × 艙等比例
+來回卡籍哩程 = 單程 × 2
+來回航段     = 單程航段權重 × 2
+哩程所需趟數 = 無條件進位(門檻哩程 ÷ 來回哩程)
+航段所需趟數 = 無條件進位(門檻航段 ÷ 來回航段)
+採用路徑     = 兩者較少趟數
+總花費       = 趟數 × 含稅來回票價
+
+參議員（長榮執飛）QP = 0 → 無法達標
+假設漢莎執飛同大陸：經濟來回 40 點、商務來回 80 點
+經濟所需 = 2,000 ÷ 40 = 50 趟；商務 = 2,000 ÷ 80 = 25 趟</pre>
+      <h3>主要來源</h3>
+      <ul>
+        <li>長榮航空〈晉升與續卡標準〉與哩程累積比例／航段權重。</li>
+        <li>長榮官網航班頁 2026 年 8 月：TPE–KIX 經濟來回從 NT$14,813，商務來回從 NT$41,170。</li>
+        <li>Miles & More 官方 Senator 頁：2,000 Points ＋ 1,000 QP／日曆年；QP 僅漢莎集團與共同發行夥伴。</li>
+        <li>Miles & More 點數表（2026-08）：同大陸經濟 20、商務 40；跨大陸經濟 60、商務 200、頭等 400。</li>
+      </ul>
+      <h3>本報告沒有做的事</h3>
+      <ul>
+        <li>沒有即時訂位，票價會變。試算器可改成實價。</li>
+        <li>信用卡轉點不計卡籍。實際晉升以航空公司帳戶為準。</li>
+      </ul>
+    </section>
   </main>
+  <footer>
+    <div class="wrap">
+      <p>本地報告 · 產生於 2026-08-31 · 供個人決策參考，不是航空公司官方報價或會籍保證。</p>
+    </div>
+  </footer>
+  <script src="js/app.js"></script>
 </body>
 </html>
