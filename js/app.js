@@ -10,8 +10,8 @@ const FARES = [
 ];
 
 const GOALS = {
-  get: { miles: 50000, segs: 50, months: 12, label: "銀卡升金卡" },
-  "from-green": { miles: 80000, segs: 76, months: 12, label: "綠卡到金卡", extra: "銀卡門檻 30,000 哩另需長榮／立榮至少 4 段；升銀後剩餘哩程可留 1 年挑戰金卡。航段剩餘不保留，故航段路徑為 26＋50。" },
+  get: { miles: 50000, segs: 50, months: 12, label: "已是銀卡升金卡" },
+  "from-green": { miles: 80000, segs: 76, months: 12, label: "綠卡從零到金卡", extra: "從綠卡不能直接跳金。先 30,000 哩＋長榮／立榮至少 4 段升銀；升銀後剩餘哩程可留 1 年衝金，故哩程路徑合計約 80,000。航段剩餘不保留，航段路徑為 26＋50。" },
   keep: { miles: 80000, segs: 80, months: 24, label: "金卡續卡" },
   senator: { miles: 0, segs: 0, months: 12, label: "參議員保級" }
 };
@@ -113,7 +113,7 @@ function syncPrice() {
 function fillMatrix() {
   const tbody = document.querySelector("#matrix tbody");
   tbody.innerHTML = FARES.map((fare) => {
-    const get = evaPlan(fare, "get", fare.price);
+    const get = evaPlan(fare, "from-green", fare.price);
     const keep = evaPlan(fare, "keep", fare.price);
     const sen = senatorPlan(fare, fare.price);
     return `<tr>
